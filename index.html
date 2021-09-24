@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="./script.js"></script>
+</head>
+
+<body>
+  <header>
+    <form class="form-inline" action="/action_page.php">
+      <label for="username" class="visually-hidden"></label>
+      <input type="text" class="Github" id="username" placeholder="Type Github username here...">
+      <div class="button button1" onclick="validate()">Analyze</div>
+    </form>
+  </header>
+  <form action="/action_page.php">
+    <fieldset style="width: 800px; height: 400px;">
+      <legend>Result</legend>
+      <div style="text-align: center;"><img id="image" sizes="small" width="100" height="100" /></div>
+      <div for="fname" id="nameLastname" style="font-size: 35px; text-align: center;"></div><br><br>
+      <label for="Username" id="userName" style="color: #7D7D7D; font-size: 12px;">@username</label>
+      <div>
+        <label for="reposayisi" id="repoCount">repo(s)</label>
+        <label id="codeSize">code</label>
+      </div>
+      <hr>
+      <div id="languages" style="display: flex;">
+      </div>
+    </fieldset>
+  </form>
+  <body>
+    <div class="blog-card">
+      <div class="meta">
+      </div>
+    </div>
+    <div class="blog-card alt">
+      <div class="meta">
+      </div>
+  </body>
+</html>
